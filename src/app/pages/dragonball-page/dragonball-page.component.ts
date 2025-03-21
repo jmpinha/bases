@@ -1,9 +1,6 @@
-import { NgClass } from '@angular/common';
 import { Component, OnInit, signal } from '@angular/core';
 import { Characters } from '../../Interfaces/CharacterInterface';
-import { CharacterListComponent } from "../../components/dragon-ball/character-list/character-list.component";
 @Component({
-  selector: 'app-dragonball-page',
   templateUrl: './dragonball-page.component.html',
 })
 export class DragonballPageComponent implements OnInit {
