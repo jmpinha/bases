@@ -1,6 +1,6 @@
-# Esta Es una aplicación para asentar las bases de la programación de Angular 19 a través de signals
+# Esta Es una aplicación para asentar las bases de la programación de Angular 19 a través del nuevo patron con signals
 
-## Cambios:
+## Cosas Aprendidas:
 
 - Un contador
 - Una tabla consumiendo signals
