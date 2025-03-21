@@ -1,0 +1,25 @@
+<h1>Dragonball</h1>
+<hr />
+<section class="row">
+    <div class="col-12 col-sm-6">
+        <h3>Agregar</h3>
+        <input type="text" [value]="name()" (change)="name.set(txtName.value)" (input)="name.set(txtName.value)" #txtName class="form-control" placeholder="Nombre del personaje">
+        <input type="number" [value]="power()" (click)="power.set(+txtPower.value)"  (input)="power.set(+txtPower.value)" class="form-control mt-2" #txtPower placeholder="Poder">
+   <button class="mt-2 btn btn-primary" (click)="addCharacter()">Agregar</button>
+    </div>
+    <div class="col-12 col-sm-6">
+        <h3>Listado</h3>
+        <ul>
+            @for (character of characters(); track character.id; let index = $index) {
+            @if (character.power>500) {<li>
+                <span>
+                    {{index + 1}}.
+                    {{character.name}}
+                </span>
+            </li>
+            }
+
+            }
+        </ul>
+    </div>
+</section>
